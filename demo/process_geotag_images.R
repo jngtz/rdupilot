@@ -1,6 +1,11 @@
 # This script explores how to geotag with image offsets using
 # an ardupilot log and a CHDK KAP log
 
+# TASKS
+# 1. Make vignette just doing simple geotag
+# 2. Make vigentte calculating klog positions
+# 3. Make vignette showing enlap calc
+
 #------------------------Import ArduPilot Log------------------
 # Exported from Mission Planner
 setwd("data-raw")
