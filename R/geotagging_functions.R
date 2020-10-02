@@ -85,7 +85,7 @@ time.to.seconds <- function(x){
 
 #' Reads KAP UAV Exposure Control Script Logged Data
 #'
-#' \code{read.kap.log} imports the logged camera data from the KAP UAV Exposure
+#' \code{read.kap.log} imports logged camera data from a KAP UAV Exposure
 #'  Control Script.
 #'
 #' @param file a KAP.log file
@@ -145,7 +145,7 @@ read.kap.log <- function(file){
 
 #' Select Sequence of Photos from Kap.log
 #'
-#' \code{select.photos} selects a sequence of photos from the imported KAP.log
+#' \code{select.photos} Selects a sequence of photos from the imported KAP.log
 #'
 #' @param kapLog the dataframe of the importated KAP.log file
 #' @param start the name (image.name) of the first file in a sequence
@@ -171,6 +171,15 @@ select.photos <- function(kapLog, start, end){
 
 
 #------------------------Some stats stuff------------------------
+
+#' Get mode
+#'
+#' Calculates the mode value from a vector
+#'
+#' @param v a vector
+#' @examples
+#' getmode(c(1,2,3,3,3,4,5,6,6))
+
 
 getmode <- function(v) {
   # Calculate the mode value
